@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+\begin{document}
+
+\title{Sample Algorithm with Control Structures}
+\author{Student}
+\date{\today}
+\maketitle
+
+\section*{Algorithm Example}
+
+\section{If-Else Statement}
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwResult{Demonstration of if-else statement}
+read current section\;
+\eIf{current section is understandable}{
+   process the section\;
+}{
+   \Indp reread the section\;
+   \Indm
+}
+\caption{If-Else Statement}
+\end{algorithm}
+
+\section{While Loop}
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwResult{Demonstration of while loop}
+initialization\;
+\While{not at end of this document}{
+  read current section\;
+  process the section\;
+}
+\caption{While Loop}
+\end{algorithm}
+
+\section{For Loop}
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwResult{Demonstration of for loop}
+initialization\;
+\For{each section in the document}{
+  read current section\;
+  process the section\;
+}
+\caption{For Loop}
+\end{algorithm}
+
+\section{Emulated Switch-Case Statement}
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwResult{Demonstration of switch-case statement}
+initialization\;
+read current section\;
+\If{section is introduction}{
+  read thoroughly\;
+}
+\ElseIf{section is methodology}{
+  take notes\;
+}
+\ElseIf{section is results}{
+  analyze data\;
+}
+\ElseIf{section is discussion}{
+  summarize findings\;
+}
+\Else{
+  read normally\;
+}
+\caption{Switch-Case Statement (Emulated)}
+\end{algorithm}
+
+\end{document}
